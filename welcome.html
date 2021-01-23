@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            width: 300px;
+            height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+            color: ghostwhite;
+
+            background-color: #10b019;
+        }
+
+        span {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Welcome, you are now signed in.</span>
+    <span id="count_down">
+        Page will close in...
+        <br>
+        <span id="count">5 seconds.</span>
+    </span>
+
+    <script src="./welcome-script.js"></script>
+</body>
+
+</html>

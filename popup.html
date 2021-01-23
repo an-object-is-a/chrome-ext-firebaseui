@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./popup-init.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            width: 300px;
+            height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            background-color: #10b019;
+        }
+
+        #my_sign_in {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transition-duration: 0.3s;
+
+            cursor: pointer;
+        }
+
+        .sign_in_no_hover {
+            transform: translate(-50%, -50%);
+            width: 75%;
+            height: 15%;
+            border-radius: 5px;
+
+            color: ghostwhite;
+            background-color: #cc7641;
+
+            font-size: 4em;
+        }
+
+        .sign_in_hover {
+            background-color: black;
+            color: white;
+            transform: translate(-50%, -50%) scale(1.3);
+            font-size: 5em;
+            font-weight: bold;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 5px white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        #my_span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+
+            text-align: center;
+            z-index: 50;
+
+            pointer-events: none;
+        }
+
+        #wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            height: 15%;
+
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+    <div id="my_sign_in" class="sign_in_no_hover">
+        <span id="my_span">Sign In</span>
+    </div>
+    <div id="sign_in_options"></div>
+
+    <script src="./popup-script.js"></script>
+</body>
+
+</html>
