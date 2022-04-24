@@ -18,6 +18,6 @@
     },
     "permissions": [],
     "content_security_policy": {
-        "extension_pages": "script-src 'self'; https://cdn.firebase.com https://apis.google.com https://www.gstatic.com; object-src 'self'"
+        "extension_pages": "script-src 'self'; object-src 'self'"
     }
 }
